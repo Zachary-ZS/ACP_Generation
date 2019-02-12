@@ -1,6 +1,6 @@
 ## Ancient Chinese Poems Generation
 
-&emsp;&emsp;NLP task: Generation of *Chinese ancient poems* 
+&emsp;&emsp;NLP task: Generation of *ancient Chinese poems* (ACPG) 
 
 > Notice: The follwing contents will be a mixture of Chinese & English cuz I'm too lazy to translate the original Chinese docs into English:man:
 
