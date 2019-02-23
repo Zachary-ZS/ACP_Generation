@@ -20,7 +20,7 @@
 &emsp;&emsp;Generating Stage: Each time we generate a poem, we use the first line as input and generates a second line. Then use the first two lines as input and generates a third line. Finally we use the first three lines as input and generates a final line. Meanwhile, considering the matter of rhyming, we will generate two versions(nonrhyme & rhyme) each time we execute the test phase.
 
 &emsp;&emsp;Version of Rhyming: We needs the module pypinyin, which can give us the final of a character directly(see the following codes). At the stage of generating, choose the model of rhyming, then the model would find out the several indexes of the most possible output words on the vocabulary when decoding the last character of each line. Then we would find if there's a word that rhymes with the rhyme. If we find one ryhmes, we use it as the prediction. Otherwise we would just use the one that's the most possible. Note: 对于韵脚的选择：生成第2、3句时，韵脚均选取上一句的句尾字；生成第四句选取第二句的句尾字。备选项的个数CANDIDATE也是根据各句对于押韵的不同要求程度定义，第二句为5，第三句为3，第四句为16.
-```
+```python
 >>> lazy_pinyin('难', style=Style.FINALS, strict=False)[0]
 >>> 'an'
 ```
@@ -34,26 +34,18 @@
 
 Rhythm：
 
->&emsp;&emsp;长安少女踏春阳，百草千花满路长。谁道东家红不去，淡云春水看春阳。
->
->&emsp;&emsp;一声天边断雁哀，清寒千古更无台。秋风吹作千山事，不用西风一水来。
->
->&emsp;&emsp;湖上秋山翠作堆，千云不日不徘徊。故教亭上人间事，一夜扁舟过眼回。
->
->&emsp;&emsp;零雨崇朝不下楼，楚人只在水中洲。沙头欲问无人事，一夜江舟入夜愁。
->
->&emsp;&emsp;斑斑血洒哭诗章，父老苍生作事长。莫说千年无一事，眼中犹恨是无阳。
->
->&emsp;&emsp;宝剑翩翩赋远游，萧舟风月夜秋愁。金门万里无人去，遥指江头夜夜楼。
+>&emsp;&emsp;长安少女踏春阳，百草千花满路长。谁道东家红不去，淡云春水看春阳。  
+>&emsp;&emsp;一声天边断雁哀，清寒千古更无台。秋风吹作千山事，不用西风一水来。  
+>&emsp;&emsp;湖上秋山翠作堆，千云不日不徘徊。故教亭上人间事，一夜扁舟过眼回。  
+>&emsp;&emsp;零雨崇朝不下楼，楚人只在水中洲。沙头欲问无人事，一夜江舟入夜愁。  
+>&emsp;&emsp;斑斑血洒哭诗章，父老苍生作事长。莫说千年无一事，眼中犹恨是无阳。  
+>&emsp;&emsp;宝剑翩翩赋远游，萧舟风月夜秋愁。金门万里无人去，遥指江头夜夜楼。  
 
 Nonrhym：
 
->&emsp;&emsp;见羊疑是已叱石，百人飞来如不知，走雨再生回首去，夜深犹在望云来。
->
->&emsp;&emsp;乞得衰身出瘴烟，春来一饭说余神，君知不是无人事，忍把青间也不知。
->
->&emsp;&emsp;六月浑如九月清，相花如月水如明，夜来雨后无人梦，错认芭蕉叶上声。
-
+>&emsp;&emsp;见羊疑是已叱石，百人飞来如不知，走雨再生回首去，夜深犹在望云来。  
+>&emsp;&emsp;乞得衰身出瘴烟，春来一饭说余神，君知不是无人事，忍把青间也不知。  
+>&emsp;&emsp;六月浑如九月清，相花如月水如明，夜来雨后无人梦，错认芭蕉叶上声。  
 #### Reference
 
 * [Qixin Wang, Tianyi Luo, Dong Wang, and Chao Xing. 2016. Chinese song iambics generationwith neural attention-based model.CoRR, abs/1604.06274.](https://www.researchgate.net/publication/301878077_Chinese_Song_Iambics_Generation_with_Neural_Attention-based_Model)
