@@ -48,6 +48,6 @@ Nonrhym：
 >&emsp;&emsp;六月浑如九月清，相花如月水如明，夜来雨后无人梦，错认芭蕉叶上声。  
 #### Reference
 
-* [Qixin Wang, Tianyi Luo, Dong Wang, and Chao Xing. 2016. Chinese song iambics generationwith neural attention-based model.CoRR, abs/1604.06274.](https://www.researchgate.net/publication/301878077_Chinese_Song_Iambics_Generation_with_Neural_Attention-based_Model)
+* [Qixin Wang, Tianyi Luo, Dong Wang, and Chao Xing. 2016. Chinese song iambics generation with neural attention-based model.CoRR, abs/1604.06274.](https://www.researchgate.net/publication/301878077_Chinese_Song_Iambics_Generation_with_Neural_Attention-based_Model)
 
 * [Github: Embedding/Chinese-Word-Vectors](https://github.com/Embedding/Chinese-Word-Vectors)
