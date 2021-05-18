@@ -26,7 +26,7 @@
 ```
 #### Other Matters
 
-&emsp;&emsp;Done with my partner YangZiyi. I suspect that the results might be better if we introduce the full stops & commas to the corpus, but we didn't give it a try. Morever, poetry-generation2 is the implementation with better results while the model in master directory doesn't work well, about which I still have no idea. In fact, the master one uses Bi-directonal lstms while the second one with undirectonal lstms, and the master one is trained in batches while the second one is trained one by one. I can't work out where the matter is.
+&emsp;&emsp;Worked with my teammate Ziyi Yang. I suspect that the results might be better if we introduce the full stops & commas to the corpus, but we didn't give it a try. Morever, poetry-generation2 is the implementation with better results while the model in master directory doesn't work well, about which I still have no idea. In fact, the master one uses Bi-directonal lstms while the second one with undirectonal lstms, and the master one is trained in batches while the second one is trained one by one. I can't work out where the matter is.
 
 #### Results
 
